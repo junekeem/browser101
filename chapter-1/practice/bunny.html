@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find Bunny</title>
+</head>
+<style>
+  body {
+    text-align: center
+  }
+
+  div {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    margin: auto auto 10px;
+  }
+
+  .bunny {
+    background-color: lightpink;
+  }
+</style>
+<body>
+<button class="findBtn">Find Bunny</button>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="bunny"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+  const button = document.querySelector('.findBtn');
+  const bunny = document.querySelector('.bunny');
+
+  button.addEventListener('click', () => {
+    findBunny();
+  });
+
+  function findBunny() {
+    bunny.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+</script>
+</body>
+</html>
